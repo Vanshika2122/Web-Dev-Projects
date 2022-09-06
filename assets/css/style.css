@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: rgb(50, 50, 50);
+  --secondary-color: rgb(126, 126, 126);
+  --bg-color: rgb(247, 235, 235);
+}
+
+#app-wrapper {
+  background-color: var(--bg-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 5rem;
+  width: 100%;
+}
+
+.app-contents {
+  margin-top: 3rem;
+  text-align: center;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 0.3rem 1rem rgb(217, 217, 217);
+  border-radius: 2rem;
+}
+
+.app-title {
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+
+.input-box {
+  font-size: 3rem;
+  padding: 1rem 2rem;
+  width: 40rem;
+  outline: none;
+  border: none;
+  margin: 5rem;
+  border-bottom: 2px solid var(--primary-color);
+  text-align: center;
+}
+
+#user-output {
+  font-size: 3rem;
+  text-align: center;
+  margin: 5rem 0;
+  color: var(--primary-color);
+  line-height: 8rem;
+}
+
+#check-btn {
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  border: 2px solid rgb(212, 212, 212);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  display: block;
+  margin: 2rem;
+  margin: auto;
+}
+
+#check-btn:hover {
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 55%;
+  }
+}
